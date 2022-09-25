@@ -46,7 +46,6 @@ function nameClick (e) {
     if (myName.value === ''){
         btn.style.backgroundColor = 'hsla(278, 94%, 14%, 0.44)'
     }
-
 }
 
 myNumber.addEventListener('keyup', numberClick);
@@ -65,7 +64,7 @@ function numberClick () {
         btn.style.backgroundColor = 'hsl(278, 68%, 11%)'
     }
     cardNumber.innerHTML = myNumber.value;
-    cardNumber.style.fontSize = '18px'
+    cardNumber.style.fontSize = '19px'
    
     if (myNumber.value === '') {
         errorNumber.textContent = "Can't be empty"
@@ -121,6 +120,9 @@ function expMClick (e) {
         if (expMonth.value === ''){
             btn.style.backgroundColor = 'hsla(278, 94%, 14%, 0.44)'
         }
+        if ( expMonth.value > '12') {
+            e.preventDefault;
+        }
    
 
 }
@@ -157,7 +159,7 @@ function allInput () {
     expMonth.style.border === '1px solid red' ||
     expYear.style.border === '1px solid red' ||
     myNumber.value.length < 19 ||
-    myName.value.length < 8 ||
+    myName.value.length < 6 ||
     cvc.value.length < 3 ||
     expMonth.value.length < 2 ||
     expYear.value.length < 2 ||
@@ -203,11 +205,11 @@ function btnClick(e) {
     if (myNumber.value.length > 1 && myNumber.value.length < 19) {
         errorNumber.textContent = "Number is too short"
     }
-    if (myName.value.length > 1 && myName.value.length < 10) {
+    if (myName.value.length > 1 && myName.value.length < 8) {
         errorName.textContent = "Name is too short"
     }
     if (cvc.value.length > 0 && cvc.value.length < 3) {
-        errorCvc.textContent = "cvv too short"
+        errorCvc.textContent = "cvc too short"
     }
     if (expMonth.value.length > 0 && expMonth.value.length < 2) {
         errorExpMonth.textContent = "Too short"
@@ -238,6 +240,7 @@ function btnCClick(e) {
     if (myName.value === '' ) {
         myName.style.border = ''
         btn.style.backgroundColor = 'hsla(278, 94%, 14%, 0.44)'
+        errorName.textContent = ""
     }
     if (myNumber.value === '' ) {
         myNumber.style.border = ''

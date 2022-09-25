@@ -124,6 +124,7 @@ form input {
     color: #ddd;
     top: 80%;
     left: 10%;
+    text-transform: uppercase;
 }
 .card-expiry-month {
     position: absolute;
@@ -155,9 +156,9 @@ form input {
 .cvc-1 {
     position: absolute;
     color: #fff;
-    top: 43%;
+    top: 44%;
     right: 12%;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 .confirm {
     display: flex;

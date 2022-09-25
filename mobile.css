@@ -124,7 +124,7 @@ form input {
     right: 7%;
 }
 .cvc-1 {
-    top: 42%;
+    top: 43%;
 }
 .card-expiry-month {
     right: 16%;
@@ -134,28 +134,3 @@ form input {
 }
 
 
-/* 
-#exp-month {
-    width: 70%;
-}
-#exp-year {
-    width: 100%;
-}
-.changed {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-}
-.changed .error-exp-year,
-.error-exp-month,
-.error-cvc {
-    display: inline-block;
-}
-.year1 {
-    transform: translateX(-2rem) translateY(3rem);
-}
-#cvc {
-    width: 134%;
-    transform: translateY(.5rem);
-    align-self: flex-start;
-} */
