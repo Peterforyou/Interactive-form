@@ -1,0 +1,161 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(25, 12, 12);
+}
+.container {
+    width: 100%;
+    margin: 0rem auto;
+    background-color: #fff;
+}
+.box-cover {
+    display: block;
+    width: 100%;
+    margin: 0rem auto;
+}
+.box1 {
+    width: 100%;
+    position: relative;
+    background: url(./images/bg-main-mobile.png) no-repeat center center/cover;
+    height: 20rem;
+}
+.bg-image {
+    margin-bottom: 0rem;
+}
+.image {
+    display: none;
+}
+.atm-front {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 25rem;
+    z-index: 1;
+}
+.atm-back {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    width: 25rem;
+}
+.box {
+    height: 90rem;
+    width: 35rem;
+    margin: 0rem auto;
+}
+form {
+    display: block;
+    height: 100%;
+    text-align: start;
+    padding: 0rem 1rem;
+    padding-top: 7rem;
+}
+form label {
+    padding: .6rem 0rem;
+    font-size: 1.5rem;
+}
+form input {
+    padding: 2.5rem .8rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+}
+.form-cover {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 0rem 3rem;
+    transform: translateX(0rem);
+}
+.btn-cover {
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.btn {
+    padding: 1.4rem 0rem;
+    background-color:  hsla(278, 94%, 14%, 0.44);
+    width: 100%;
+    border-radius: .5rem;
+    color: #f4f4f4;
+    transform: translateX(0rem);
+}
+::placeholder {
+    font-size: 1.8rem;
+}
+#cvc {
+    width: 134%;
+}
+
+.card-number {
+    font-size: 1.3rem;
+}
+.reduced-width {
+    transform: translateX(-2rem);
+}
+.increased-width {
+    transform: translateX(-4rem);
+    width: 100%;
+}
+.form-cover .form-group label {
+    display: inline-block;
+}
+.confirm {
+    padding-top: 8rem;
+    padding-left: 0rem;
+}
+.confirm img {
+    width: 40%;
+}
+.btn-closure {
+    padding: 1rem 0rem;
+    background-color:  hsl(278, 68%, 11%);
+    width: 80%;
+    border-radius: .5rem;
+    color: #fff;
+    margin-top: 1.5rem;
+}
+.confirm h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.card-expiry-year {
+    right: 7%;
+}
+.cvc-1 {
+    top: 42%;
+}
+.card-expiry-month {
+    right: 16%;
+}
+.card-expiry-slash {
+    right: 13%;
+}
+
+
+/* 
+#exp-month {
+    width: 70%;
+}
+#exp-year {
+    width: 100%;
+}
+.changed {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.changed .error-exp-year,
+.error-exp-month,
+.error-cvc {
+    display: inline-block;
+}
+.year1 {
+    transform: translateX(-2rem) translateY(3rem);
+}
+#cvc {
+    width: 134%;
+    transform: translateY(.5rem);
+    align-self: flex-start;
+} */

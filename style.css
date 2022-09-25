@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(25, 12, 12);
+}
+.container {
+    width: 90rem;
+    margin: 3rem auto;
+    background-color: #fff;
+}
+.box-cover {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: left;
+    padding: 1rem;
+}
+form label {
+    display: block;
+    padding: .6rem 0rem;
+    font-weight: 900;
+}
+form input {
+    padding: .3rem .8rem;
+    padding-bottom: .5rem;
+    margin-bottom: 1.5rem;
+    width: 140%;
+    outline: none;
+    border-radius: .5rem;
+    border: 1px solid #ddd;
+}
+::placeholder {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.btn-cover {
+    text-align: center;
+    width: 50%;
+    margin-top: 1rem;
+}
+.btn {
+    padding: 1rem 0rem;
+    background-color:  hsl(278, 68%, 11%);
+    width: 90%;
+    border-radius: .5rem;
+    color: #fff;
+    transform: translateX(3.7rem);
+    border: none;
+}
+.form-cover {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 45%;
+    gap: 0rem 3rem;
+    transform: translateX(4rem);
+}
+.reduced-width {
+    transform: translateX(-2rem);
+}
+.increased-width {
+    transform: translateX(-4rem);
+    width: 100%;
+}
+#exp-month {
+    width: 100%;
+}
+#exp-year {
+    width: 100%;
+}
+.box1 {
+    width: 100%;
+    position: relative;
+}
+.bg-image {
+    width: 100%;
+    margin-bottom: -.2rem;
+}
+.image {
+    width: 100%;
+}
+.atm-front {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 30rem;
+}
+.atm-back {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 30rem;
+}
+.atm-front img {
+    width: 100%;
+}
+.atm-back img {
+    width: 100%;
+}
+
+.card-number {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 10%;
+    font-size: 1.5rem;
+}
+.card-name {
+    position: absolute;
+    color: #ddd;
+    top: 80%;
+    left: 10%;
+}
+.card-expiry-month {
+    position: absolute;
+    color: #ddd;
+    top: 80%;
+    right: 12%;
+}
+.card-expiry-slash {
+    position: absolute;
+    color: #ddd;
+    top: 80%;
+    right: 10%;
+}
+.card-expiry-year {
+    position: absolute;
+    color: #ddd;
+    top: 80%;
+    right: 6%;
+}
+.bubble {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 3rem;
+}
+.bubble img {
+    width: 100%;
+}
+.cvc-1 {
+    position: absolute;
+    color: #fff;
+    top: 43%;
+    right: 12%;
+    font-size: 1.6rem;
+}
+.confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    padding-top: 15rem;
+}
+.hidden {
+    display: none;
+}
+.confirm img {
+    width: 20%;
+}
+.confirm h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.btn-closure {
+    padding: 1rem 0rem;
+    background-color:  hsl(278, 68%, 11%);
+    width: 50%;
+    border-radius: .5rem;
+    color: #fff;
+    margin-top: 1.5rem;
+}
+.error-exp-year, .error-exp-month, .error-cvc, .error-number, .error-name {
+    color: red;
+    font-size: 10px;
+}

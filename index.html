@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="./mobile.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+    <!-- .attribution a { color: hsl(228, 45%, 44%); } -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="box-cover">
+            <div class="box1">
+                <div class="bg-image">
+                    <img class="image" src="./images/bg-main-desktop.png" alt="">
+                </div>
+                <div class="atm-front">
+                    <img src="./images/bg-card-front.png" alt="">
+                    <div class="bubble">
+                        <img src="./images/card-logo.svg" alt="">
+                    </div>
+                    <div class="card-number">
+                        <h2> 0000 0000 0000 0000</h2>
+                    </div>
+                    <div class="card-name">
+                        <h4>Peter Bit</h4>
+                    </div>
+                    <div class="card-expiry-month">
+                        <h5>00</h5>
+                    </div>
+                    <div class="card-expiry-slash">
+                        <h5>/</h5>
+                    </div>
+                    <div class="card-expiry-year">
+                        <h5>00</h5>
+                    </div>
+                </div>
+                <div class="atm-back">
+                    <img src="./images/bg-card-back.png" alt="">
+                    <div class="cvc-1">
+                        <h5>000</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name">CARDHOLDER NAME</label>
+                        <input type="name" id="name" placeholder="e.g. Peter Bit">
+                        <p class="error-name"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">CARD NUMBER</label>
+                        <input type="text" id="number" placeholder="e.g. 1234 3456 5678 9878">
+                        <p class="error-number"></p>
+                    </div>
+                    <div class="form-cover">
+                        <div class="form-group changed">
+                                <label for="number">EXP. DATE</label>
+                                <input type="text" id="exp-month" placeholder="MM">
+                                <p class="error-exp-month"></p>              
+                        </div>
+                        <div class="form-group reduced-width">
+                            <label for="number">(MM/YY)</label>
+                            <input type="text" id="exp-year" placeholder="YY">
+                            <p class="error-exp-year"></p>
+                        </div>
+                        <div class="form-group increased-width">
+                            <label for="number">CVC</label>
+                            <input type="text" id="cvc" placeholder="e.g. 123">
+                            <p class="error-cvc"></p>
+                        </div>
+                    </div>
+                    <div class="btn-cover">
+                        <button class="btn">Confirm</button>
+                    </div>
+                </form>
+                <div class="confirm hidden">
+                    <img src="./images/icon-complete.svg" alt="">
+                    <h1>THANK YOU!!</h1>
+                    <p>We've added your card details</p>
+                    <button class="btn-closure">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
