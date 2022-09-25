@@ -20,7 +20,7 @@ This is a task gotten from Frontend Mentor to build a Interactive Card Details F
 
 ### Links
 
-- Live Site URL:(https://clipboard-peter-bit.netlify.app/)
+- Live Site URL:(https://peterforyou.github.io/Interactive-form/)
 
 ### Built with
 
